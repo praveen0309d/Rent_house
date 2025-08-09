@@ -1,0 +1,29 @@
+[
+    {
+        "price": "\u20b940L",
+        "landSpace": "1000 sq.ft",
+        "furnishing": "Unfurnished",
+        "bhk": "1BHK",
+        "contact": "9123456789",
+        "location": "Coimbatore",
+        "details": "Close to tech park"
+    },
+    {
+        "price": "\u20b975L",
+        "landSpace": "1800 sq.ft",
+        "furnishing": "Semi-Furnished",
+        "bhk": "3BHK",
+        "contact": "9012345678",
+        "location": "Bangalore",
+        "details": "Gated community, clubhouse access"
+    },
+    {
+        "price": "\u20b955L",
+        "landSpace": "1400 sq.ft",
+        "furnishing": "Furnished",
+        "bhk": "2BHK",
+        "contact": "9876543210",
+        "location": "Chennai",
+        "details": "Near metro station"
+    }
+]

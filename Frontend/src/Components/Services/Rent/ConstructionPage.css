@@ -1,0 +1,232 @@
+/* Construction Theme Colors */
+:root {
+  --construction-orange: #FFA500;
+  --construction-yellow: #FFD700;
+  --construction-gray: #333333;
+  --construction-red: #FF4136;
+  --construction-white: #F8F9FA;
+}
+
+.construction-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--construction-white);
+  min-height: 100vh;
+}
+
+.construction-header {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.construction-header h1 {
+  color: var(--construction-gray);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.construction-header p {
+  color: var(--construction-gray);
+  font-size: 1.2rem;
+}
+
+.construction-icon {
+  font-size: 3rem;
+  color: var(--construction-orange);
+  margin-bottom: 1rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animation-section {
+  margin: 3rem 0;
+  position: relative;
+}
+/* 
+.construction-gif {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+} */
+
+.construction-workers {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.worker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  color: var(--construction-orange);
+}
+
+.worker span {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: var(--construction-gray);
+}
+
+.progress-section {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+}
+
+.progress-section h3 {
+  color: var(--construction-gray);
+  margin-bottom: 1rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 30px;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--construction-orange), var(--construction-yellow));
+  transition: width 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.progress-details {
+  display: flex;
+  justify-content: space-between;
+  color: var(--construction-gray);
+  font-size: 0.9rem;
+}
+
+.notification-section {
+  margin: 3rem 0;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.notification-section h3 {
+  color: var(--construction-gray);
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--construction-gray);
+}
+
+.input-group input {
+  flex: 1;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  border-radius: 30px 0 0 30px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.input-group button {
+  padding: 0 1.5rem;
+  background-color: var(--construction-orange);
+  color: white;
+  border: none;
+  border-radius: 0 30px 30px 0;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.input-group button:hover {
+  background-color: var(--construction-red);
+}
+
+.success-message {
+  color: var(--construction-orange);
+  font-weight: bold;
+}
+
+.safety-notice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  color: var(--construction-red);
+  font-weight: bold;
+}
+
+.safety-barrier {
+  width: 50px;
+  height: 20px;
+  background-color: var(--construction-orange);
+  margin: 0 1rem;
+  position: relative;
+}
+
+.safety-barrier:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 40px;
+  background-color: var(--construction-orange);
+  top: -10px;
+  left: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .construction-header h1 {
+    font-size: 2rem;
+  }
+  
+  .construction-workers {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .progress-details {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .input-group {
+    flex-direction: column;
+  }
+  
+  .input-group input {
+    border-radius: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .input-group button {
+    border-radius: 30px;
+  }
+}

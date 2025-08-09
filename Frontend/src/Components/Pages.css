@@ -1,0 +1,437 @@
+/* Pages.css - Shared Styles */
+
+/* Base Styles */
+.page-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+/* Buy Page Styles */
+.filter-sidebar {
+  width: 250px;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-right: 2rem;
+}
+
+.filter-group {
+  margin-bottom: 1.5rem;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #2b2d42;
+}
+
+.filter-group select, 
+.filter-group input[type="range"] {
+  width: 100%;
+}
+
+.price-display {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #495057;
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  flex: 1;
+}
+
+.property-card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.property-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.price-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(43, 45, 66, 0.9);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.property-details {
+  padding: 1.5rem;
+  background: white;
+}
+
+.property-details h4 {
+  margin: 0 0 0.5rem;
+  color: #2b2d42;
+}
+
+.property-details p {
+  margin: 0 0 1rem;
+  color: #6c757d;
+}
+
+.view-btn {
+  background: #2b2d42;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.view-btn:hover {
+  background: #1a1b2e;
+}
+
+/* Rent Page Styles */
+.rent-header {
+  margin-bottom: 2rem;
+}
+
+.search-box {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #dee2e6;
+  border-radius: 4px 0 0 4px;
+  font-size: 1rem;
+}
+
+.search-box button {
+  padding: 0 1.5rem;
+  background: #ef233c;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-box button:hover {
+  background: #d90429;
+}
+
+.rent-tabs {
+  display: flex;
+  margin: 1.5rem 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.rent-tabs button {
+  padding: 0.75rem 1.5rem;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  font-weight: 600;
+  color: #6c757d;
+  transition: all 0.3s ease;
+}
+
+.rent-tabs button.active {
+  color: #2b2d42;
+  border-bottom-color: #ef233c;
+}
+
+.rental-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.rental-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.rental-card:hover {
+  transform: translateY(-3px);
+}
+
+.rental-info h3 {
+  margin: 0 0 0.5rem;
+  color: #2b2d42;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ef233c;
+  margin: 0 0 0.5rem;
+}
+
+.amenities {
+  color: #6c757d;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.inquiry-btn {
+  background: #2b2d42;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.inquiry-btn:hover {
+  background: #1a1b2e;
+}
+
+/* Lease Page Styles */
+.lease-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.lease-info {
+  padding-right: 2rem;
+}
+
+.lease-info h2 {
+  color: #2b2d42;
+  margin-bottom: 1.5rem;
+}
+
+.lease-info p {
+  color: #495057;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.benefits h3 {
+  color: #2b2d42;
+  margin-bottom: 1rem;
+}
+
+.benefits ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.benefits li {
+  padding: 0.5rem 0;
+  color: #495057;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.benefits li:before {
+  content: "•";
+  color: #ef233c;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.lease-form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.lease-form h3 {
+  color: #2b2d42;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #495057;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background: #ef233c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #d90429;
+}
+
+/* Enquiry Page Styles */
+.enquiry-container {
+  max-width: 800px;
+}
+
+.enquiry-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.enquiry-header h2 {
+  color: #2b2d42;
+}
+
+.enquiry-header p {
+  color: #495057;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.enquiry-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.enquiry-tabs button {
+  padding: 0.75rem 1.5rem;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  font-weight: 600;
+  color: #6c757d;
+  transition: all 0.3s ease;
+}
+
+.enquiry-tabs button.active {
+  color: #2b2d42;
+  border-bottom-color: #ef233c;
+}
+
+.enquiry-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 3rem;
+}
+
+.contact-info {
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.contact-info h3 {
+  color: #2b2d42;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  color: #495057;
+  margin: 0.5rem 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .page-container {
+    flex-direction: column;
+  }
+  
+  .filter-sidebar {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .lease-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .lease-info {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .property-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .rental-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .inquiry-btn {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  
+  .enquiry-tabs {
+    flex-direction: column;
+  }
+  
+  .enquiry-tabs button {
+    border-bottom: none;
+    border-left: 3px solid transparent;
+    text-align: left;
+  }
+  
+  .enquiry-tabs button.active {
+    border-left-color: #ef233c;
+    border-bottom: none;
+  }
+}
