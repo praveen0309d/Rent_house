@@ -76,49 +76,49 @@ const Main_Home = () => {
 
       {/* ===== About Section ===== */}
       <div id="about-section" className="about-section">
-        <div className="about-container">
-          <div className="about-card">
-            <h1>About Us</h1>
-            <p><strong>Welcome to DSP Elite Homes Ltd – Your Trusted Real Estate Partner</strong></p>
-          </div>
+<div className="about-container">
+  <div className="about-card">
+    <h1>About Us</h1>
+    <p><strong>Welcome to DSP Elite Homes Ltd – Your Trusted Real Estate Partner</strong></p>
+  </div>
 
-          <div className="about-card">
-            <h2>Who We Are</h2>
-            <p>Founded in 2025 with a passion for property and people, <strong>DSP Elite Homes Ltd</strong> is a dynamic real estate agency based in Rugby. Our team is made up of experienced professionals who understand the local market inside out. With a deep commitment to cpent satisfaction, we have helped hundreds of famipes and investors find the right property solutions.</p>
-          </div>
+  <div className="about-card">
+    <h2>Who We Are</h2>
+    <p>Founded in 2025 with a passion for property and people, <strong>DSP Elite Homes Ltd</strong> is a dynamic real estate agency based in Rugby. Our team consists of experienced professionals who understand the local market inside and out. With a deep commitment to client satisfaction, we have helped hundreds of families and investors find the right property solutions.</p>
+  </div>
 
-<div className="about-card">
-  <h2>What We Do</h2>
-  <ul>
-    <p>Residential Sales & Rentals – Apartments, villas, and independent houses.</p>
-    <p>Commercial Properties – Office spaces, retail shops, and warehouses.</p>
-    <p>Plot and Land Deals – Verified and ready-to-build land parcels.</p>
-    <p>Property Management – End-to-end solutions for landlords and tenants.</p>
-    <p>Investment Advisory – Expert advice on real estate investment opportunities.</p>
-  </ul>
+  <div className="about-card">
+    <h2>What We Do</h2>
+    <ul>
+      <li><strong>Residential Sales & Rentals:</strong> Apartments, villas, and single-family homes.</li>
+      <li><strong>Commercial Properties:</strong> Office spaces, retail shops, and warehouses.</li>
+      <li><strong>Land Sales:</strong> Verified, ready-to-build land parcels.</li>
+      <li><strong>Property Management:</strong> End-to-end solutions for landlords and tenants.</li>
+      <li><strong>Investment Advisory:</strong> Expert guidance on real estate investment opportunities.</li>
+    </ul>
+  </div>
+
+  <div className="about-card">
+    <h2>Our Mission</h2>
+    <p>Our mission is simple: <strong>to make real estate straightforward and accessible</strong>. We deliver exceptional service through market expertise, ethical practices, and innovative technology.</p>
+  </div>
+
+  <div className="about-card">
+    <h2>Why Choose Us?</h2>
+    <ul>
+      <li><strong>Local Expertise:</strong> We know the neighborhoods, trends, and opportunities.</li>
+      <li><strong>Personalized Service:</strong> We listen to your needs and tailor solutions for you.</li>
+      <li><strong>Verified Listings:</strong> Every property we represent is genuine and vetted.</li>
+      <li><strong>Transparent Process:</strong> No hidden fees or false promises.</li>
+      <li><strong>Customer-First Approach:</strong> Your satisfaction is our top priority.</li>
+    </ul>
+  </div>
+
+  <div className="about-card">
+    <p><strong>Let’s find your next property together.</strong><br />
+    Contact us today to begin your real estate journey with confidence.</p>
+  </div>
 </div>
-
-          <div className="about-card">
-            <h2>Our Mission</h2>
-            <p>Our mission is simple: <strong>to make real estate simple and accessible</strong>. We aim to offer exceptional service through market expertise, ethical practices, and cutting-edge technology.</p>
-          </div>
-
-<div className="about-card">
-  <h2>Why Choose Us?</h2>
-  <ul>
-    <p>Local Knowledge: We know the neighborhoods, the trends, and the opportunities.</p>
-    <p>Personapzed Service: We psten to your needs and tailor solutions accordingly.</p>
-    <p>Verified pstings: We deal only in genuine, verified properties.</p>
-    <p>Transparent Process: No hidden costs, no false promises.</p>
-    <p>Customer First: Your satisfaction is our top priority.</p>
-  </ul>
-</div>
-
-          <div className="about-card">
-            <p><strong>Let's find your next property together.</strong><br />
-            Contact us today and take the first step toward your real estate journey with confidence.</p>
-          </div>
-        </div>
       </div>
     </div>
   );

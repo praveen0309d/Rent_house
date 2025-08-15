@@ -100,36 +100,37 @@ const Enquiry = () => {
           <option value="Commercial">Commercial</option>
         </select>
 
-       <label>Preferred Contact:</label>
-{/* <div className="radio-group">
-  <label>
-    <input
-      type="radio"
-      name="preferredContact"
-      value="Whatsapp"
-      checked={formData.preferredContact === "Whatsapp"}
-      onChange={handleChange}
-    /> Whatsapp
-  </label>
-  <label>
-    <input
-      type="radio"
-      name="preferredContact"
-      value="Email"
-      checked={formData.preferredContact === "Email"}
-      onChange={handleChange}
-    /> Email
-  </label>
-  <label>
-    <input
-      type="radio"
-      name="preferredContact"
-      value="Phone"
-      checked={formData.preferredContact === "Phone"}
-      onChange={handleChange}
-    /> Phone
-  </label>
-</div> */}
+        <label>Preferred Contact:</label>
+        <div className="radio-group">
+          <label>
+            <input
+              type="radio"
+              name="preferredContact"
+              value="Whatsapp"
+              checked={formData.preferredContact === "Whatsapp"}
+              onChange={handleChange}
+              required
+            /> Whatsapp
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="preferredContact"
+              value="Email"
+              checked={formData.preferredContact === "Email"}
+              onChange={handleChange}
+            /> Email
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="preferredContact"
+              value="Phone"
+              checked={formData.preferredContact === "Phone"}
+              onChange={handleChange}
+            /> Phone
+          </label>
+        </div>
 
         <textarea
           name="message"
@@ -145,13 +146,13 @@ const Enquiry = () => {
       </form>
 
       {status && (
-  <p 
-    className="status-message"
-    data-status={status.includes("✅") ? "success" : "error"}
-  >
-    {status}
-  </p>
-)}
+        <p 
+          className="status-message"
+          data-status={status.includes("✅") ? "success" : "error"}
+        >
+          {status}
+        </p>
+      )}
     </div>
   );
 };
